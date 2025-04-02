@@ -1,0 +1,48 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'TT Commons';
+  src: url('./assets/fonts/TTCommons/TTCommons-Regular.eot');
+  src: url('./assets/fonts/TTCommons/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/TTCommons/TTCommons-Regular.woff') format('woff'),
+  url('./assets/fonts/TTCommons/TTCommons-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+body {
+  font-family: 'TT Commons', sans-serif;
+  color: $black;
+  min-height: 100vh;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: $gray;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
